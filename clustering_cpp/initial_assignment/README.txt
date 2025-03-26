@@ -1,0 +1,3 @@
+This folder contains the initial cluster assignment vector computed by the k-means algorithm in Python or pre-computed by the user.
+The assignment vector is saved into a file named <INSTANCE_NAME>_<K>.txt with 'n' rows (one for each data point) representing the cluster assigned to that point (from 0 to k-1)
+Pre-computed assignment vectors must be placed in the 'initial_assignment' folder and 'KMEANS_INIT' in 'config.txt' file must be set to 0
