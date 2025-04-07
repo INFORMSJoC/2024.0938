@@ -1,0 +1,40 @@
+# Initial assignment: use a pre-computed assignment in the 'initial_assignment' folder (0); run k-means with several initializations and save the result in the 'initial_assignment' folder (>= 1)
+KMEANS_INIT = 1000
+
+# CG time limit (int)
+CG_TIME_LIMIT = 86400
+# Maximum number of CG iterations (int)
+CG_MAX_ITER = 1000000
+# Display CG summary statistics every CG_LOG_STEP iterations (int)
+CG_LOG_STEP = 100
+# Strategy for disaggregating the dual variables: average (0); sparse (1); complementary (2)
+CG_DUAL_DISAGGREGATION = 0
+# Update Q with the column having the smallest number of incompatibilities (0); update Q with the minimum reduced cost column (1)
+CG_PARTITION_UPDATE = 1
+# Force the disaggregation of Q when the ratio between the minimum RC compatible and incompatible columns is smaller than the threshold (float)
+CG_DISAGGREGATION_THRESHOLD = 0.25
+# Maximum number of compatible columns to add in the RMP at each CG iteration (int)
+CG_MAX_COMP_COLS = 10
+# Maximum number of columns to generate at each CG iteration (int)
+CG_MAX_COLS = 100
+# Run MIP-based RMP heuristic to get a feasible clustering at the end of CG algorithm: yes (1); no (0)
+CG_MIP_HEURISTIC = 0
+# Do not display CG log (0); display CG log (1)
+CG_VERBOSE = 1
+# Inherit the aggregating partition Q from the parent node: yes (1); no (0)
+CG_INHERIT_PARTITION_CHILD = 1
+# Run heuristic pricing in children nodes before exact pricing: yes (1); no (0)
+CG_HEURISTIC_PRICING_CHILD = 1
+# Maximum number of compatible columns to add in the RMP at each CG iteration in a branching node (int)
+CG_MAX_COMP_COLS_CHILD = 10
+
+# B&B optimality tolerance (float)
+BB_TOL = 1e-4
+# Single thread (1); multi-thread (> 1 number of threads)
+BB_THREADS = 1
+# Maximum number of B&B nodes to explore (int)
+BB_MAX_NODES = 1
+# B&B visiting strategy: best first (0); depth first (1); breadth first (2)
+BB_VISITING_STRATEGY = 0
+# Do not display B&B log (0); display B&B log (1)
+BB_VERBOSE = 0
